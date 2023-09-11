@@ -1,0 +1,247 @@
+*{
+}
+nav{
+    z-index: 1000;
+    width: 90%;
+    margin: auto;
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin:0 5px;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    padding:0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight:bold;
+    color:orange;
+    z-index: 1;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color:lightgoldenrodyellow;
+    z-index: -1;
+    transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+    color: orange;
+    
+}
+hr{
+    outline-color: orange;
+}
+.logo a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.content{
+    width: 40%;
+    padding-top: 100px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+.image1 img{
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    align-items: center;
+    float: right;
+    position: absolute;
+    right: 200px;
+    top: 135px;
+    outline: 10px solid orange;
+    box-shadow: 0 .5rem 1.5rem orange;
+}
+.content h1{
+    font-size:50px;
+    letter-spacing: 1px;
+    color: orange;
+}
+.content p{
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.login{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+    padding: 0 2rem;
+    color: #000;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+}
+.signin{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    line-height: 50px;
+    font-size: 14px;
+    height: 50px;
+    padding: 0 2rem;
+    color: #000;
+    color: #fff;
+    background-color: orange;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+    position:absolute;
+    transition: all ease 0.3s;
+    
+}
+.signin:hover{
+    background-color: #ff8000;
+    transition: all ease 0.3s;
+}
+#log{
+    position: absolute;
+    left:420px;
+    top: 263px;
+}
+.logo{
+    line-height: 50px;
+    background-color: lightgoldenrodyellow;
+}
+.search-box{
+    background-color: #ffffff;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.search-box i{
+    font-size: 14px;
+    color: #3b3b3b;
+}
+.search-box .input{
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 0px 10px;
+    border-right-color: none;
+}
+.search-box .search-button{
+    width: 120px;
+    height: 42px;
+    font-size: 14px;
+    background-color: orange;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border-left-color: none;
+    border-left: 10px;
+}
+.search-box .search-button:hover{
+    background-color: #ff8000;
+    transition: all ease 0.3s;
+}
+section{
+    margin-left: 55px;
+}
+.features{
+    margin:0;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: orange;
+}
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    column-gap: 1.5rem;
+}
+ .box{
+    padding: 3rem 2rem;
+    background:#ffffff;
+    outline: 1rem solid #ffa64d;
+    outline-offset:-1rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1.5rem orange;
+}
+h3{
+    color: orange;
+}
+h3:hover{
+    background-color: lightgoldenrodyellow;
+}
+.btn{
+    text-decoration: none;
+    color: orange;
+    font-weight:bold;
+}
+.btn:hover{
+    color: darkorange;
+    background-color: lightgoldenrodyellow
+}
+.image2{
+    width: 150px;
+    height: 150px;
+    border: 0.5px solid black;
+}
+.link{
+    position: absolute;
+    right: 5%;
+    bottom:1%;
+}
+.link i{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius:50%;
+    background-color: orange;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.link i:hover{
+    transform: translateY(-5px);
+}
+.link p{
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+.link a{
+    cursor: pointer;
+    text-decoration: none;
+}
